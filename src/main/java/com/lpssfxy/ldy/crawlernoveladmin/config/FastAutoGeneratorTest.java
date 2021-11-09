@@ -104,9 +104,9 @@ public class FastAutoGeneratorTest {
                         .enableCapitalMode()//开启大写命名，默认值:false
                         .enableSkipView()//开启跳过视图，默认值:false
                         .disableSqlFilter()//禁用 sql 过滤，默认值:true，语法不能支持使用 sql 过滤表的话，可以考虑关闭此开关
-                        .likeTable(new LikeTable("user"))//模糊表匹配(sql 过滤)	likeTable 与 notLikeTable 只能配置一项
+                        .likeTable(new LikeTable("book"))//模糊表匹配(sql 过滤)	likeTable 与 notLikeTable 只能配置一项
                         /** 设置需要生成的表名 */
-                        .addInclude("user")// 增加表匹配(内存过滤)，include 与 exclude 只能配置一项
+                        .addInclude("book")// 增加表匹配(内存过滤)，include 与 exclude 只能配置一项
                         /** 前缀配置*/
                         //.addTablePrefix("t_")//增加过滤表前缀
                         //.addFieldSuffix("_")//增加过滤表后缀

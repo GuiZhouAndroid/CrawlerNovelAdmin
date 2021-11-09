@@ -7,14 +7,11 @@ import com.lpssfxy.ldy.crawlernoveladmin.service.UserService;
 import com.lpssfxy.ldy.crawlernoveladmin.utils.JsonResult;
 import com.lpssfxy.ldy.crawlernoveladmin.utils.ResultCode;
 import com.lpssfxy.ldy.crawlernoveladmin.utils.ResultUtil;
-import com.lpssfxy.ldy.crawlernoveladmin.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
