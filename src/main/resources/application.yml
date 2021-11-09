@@ -1,0 +1,19 @@
+# SpringBoot资源配置
+spring:
+  datasource:
+    name: campus_app_database  #数据库名
+    url: jdbc:mysql://localhost:3306/books?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC #url
+    username: root  #用户名
+    password: root  #密码
+    driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
+
+# Mybatis-Plus 数据库框架
+mybatis-plus:
+  # 搜索指定包别名---配置实体类
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件---配置映射文件，与包名下mapper目录中带有@Mapper注解接口进行数据交互
+  type-aliases-package: com.lpssfxy.ldy.crawlernoveladmin.entity
+  # 加载全局参数配置文件
+  config-location: classpath:mybatis-config.xml
+server:
+  port: 8085
