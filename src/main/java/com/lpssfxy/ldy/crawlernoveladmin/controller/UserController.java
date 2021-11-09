@@ -49,7 +49,7 @@ public class UserController {
         QueryWrapper<UserBean> queryWrapper = new QueryWrapper<UserBean>().select("*").eq("login_name",username).eq("password",password);
         UserBean ifHaveLogin = userService.getOne(queryWrapper);
         if (ifHaveLogin !=null){
-            //登录失败
+            //登录成功
             return ResultUtil.successSate(ifHaveLogin);
         }
         //登录失败
